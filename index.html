@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jared Eldridge</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Jared Eldridge. Homepage">
+    <meta name="author" content="Jared Eldridge">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Jared Eldridge</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jared-eldridge-67b7611a5/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng&id=p20#p20">Favorite Scripture</a></li>
+                <li><a href="#">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="profile picture">
+            <p>Hello! My name is Jared Eldridge and I am from Idaho Falls, Idaho. I am 23 years old and enjoy spending time with my wife and learning new things. I have a small amount of background in the tech industry and am hoping to use this degree as an oppourtunity to further develope those skills.</p>
+            <img src="images/flag.png" alt="USA Flag">
+            <p>The United States, located in North America, is known for its diverse landscapes, ranging from bustling cities to vast natural landmarks like the Grand Canyon. It is a melting pot of cultures with significant global influence in culture, economy, and politics.</p>
+
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-how-to-code?g_network=g&g_productchannel=&g_adid=699378998785&g_locinterest=&g_keyword=coding%20courses&g_acctid=243-039-7011&g_adtype=&g_keywordid=kwd-949873038&g_ifcreative=&g_campaign=account&g_locphysical=9029486&g_adgroupid=165097891409&g_productid=&g_source={sourceid}&g_merchantid=&g_placement=&g_partition=&g_campaignid=21287608736&g_ifproduct=&utm_id=t_kwd-949873038:ag_165097891409:cp_21287608736:n_g:d_c&utm_source=google&utm_medium=paid-search&utm_term=coding%20courses&utm_campaign=US_-_Exact&utm_content=699378998785&g_adtype=search&g_acctid=243-039-7011&gad_source=1&gclid=Cj0KCQjwvb-zBhCmARIsAAfUI2scuX1dKqVmqea6q-VQ676UjgFJEiQEFAUxlSYRaMvS1mKGZVq77WEaAgdfEALw_wcB">Codecademy</a></li>
+                <li><a href="https://www.codementor.io/web-development-experts">Code Mentor</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jared Eldridge  United States of America.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
+</body>
+</html>
