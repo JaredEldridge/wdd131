@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jared Eldridge</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Jared Eldridge">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temples</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+            <div class ="gallery">
+                <figure>
+                    <img src="images/albuquerquetemple.jpg" alt="Temple Image">
+                    <figcaption>Albuquerque Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/billingsmontanatemple.jpg" alt="Temple Image">
+                    <figcaption>Billings Montana</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/boiseidahotemple.jpg" alt="Temple Image">
+                    <figcaption>Boise Idaho</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/brighamcitytemple.jpg" alt="Temple Image">
+                    <figcaption>Brigham City Utah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cardstonalbertatemple.jpg" alt="Temple Image">
+                    <figcaption>Cardston Alberta</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dallastexastemple.jpg" alt="Temple Image">
+                    <figcaption>Dallas Texas</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/logantemple.jpg" alt="Temple Image">
+                    <figcaption>Logan Utah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/manhattantemple.jpg" alt="Temple Image">
+                    <figcaption>Manhatten New York</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/portlandoregontemple.jpg" alt="Temple Image">
+                    <figcaption>Portland Oregon</figcaption>
+                </figure>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jared Eldridge  United States of America.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
+</body>
+</html>
